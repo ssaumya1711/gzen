@@ -118,7 +118,7 @@ let d = [1,2,3,4,5,6,7,8,9,10];
       console.log(a[i]);
  }
 })(d);
-        e.Return all the palindromes in an array
+        e.Return all the palindromes in an array(??)
         f.Return median of two sorted arrays of same size
         //anonym
         let a = [1, 12, 15, 26, 38];
@@ -297,4 +297,4 @@ let o = (a) =>
  }
 };
 o(d);
-        e.Return all the palindromes in an array
+        e.Return all the palindromes in an array(??)
