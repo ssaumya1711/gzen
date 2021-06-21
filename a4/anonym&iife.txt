@@ -239,3 +239,62 @@ let d = [1,2,1,4,5,5,7,8,8,9,10];
     console.log(a);
 })(d,3);
         
+3) Do the below programs in arrow functions
+        a.Print odd numbers in an array
+        let d = [1,2,3,4,5,6,7,8,9,10];
+let o = (a) =>
+{
+  for(let i = 0;i<a.length;i++)
+  {
+    if(a[i] & 1)
+     console.log(a[i]);
+  }
+}
+o(d);
+        b.Convert all the strings to title caps in a string array
+        let s = "I'm a little tea pot";
+let o = (a) =>
+{
+ let r = "";
+ for(let i = 0;i<a.length;i++)
+ {
+     if(a[i] == ' ' && i+1 < a.length)
+     {
+         r = r + " " + a[i+1].toUpperCase();
+         i++;
+     }
+     else
+      r += a[i];
+ }
+ return r;
+};
+console.log(o(s));
+        c.Sum of all numbers in an array
+        let d = [1,2,3,4,5,6,7,8,9,10];
+let o = (a) =>
+{
+ let s = 0;
+ for(let i = 0;i<a.length;i++)
+ {
+     s += a[i];
+ }
+ console.log(s);
+};
+o(d);
+        d.Return all the prime numbers in an array
+        let d = [1,2,3,4,5,6,7,8,9,10];
+let o = (a) =>
+{
+ for(let i = 0;i<a.length;i++)
+ {
+     for(j=2;j<=parseInt(Math.sqrt(a[i]));j++)
+     {
+         if(a[i]%j == 0)
+          break;
+     }
+     if((j == parseInt(Math.sqrt(a[i]))+1) && (a[i] > 1))
+      console.log(a[i]);
+ }
+};
+o(d);
+        e.Return all the palindromes in an array
