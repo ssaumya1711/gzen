@@ -1,1 +1,164 @@
-
+1) Do the below programs in anonymous function & IIFE
+        a.Print odd numbers in an array
+        //anonym
+        let d = [1,2,3,4,5,6,7,8,9,10];
+        let o = function(a)
+        {
+          for(let i = 0;i<a.length;i++)
+          {
+            if(a[i] & 1)
+             console.log(a[i]);
+          }
+        };
+        o(d);
+        //iife
+        let d = [1,2,3,4,5,6,7,8,9,10];
+(function(){
+  function odd(a)
+  {
+    for(let i = 0;i<a.length;i++)
+    {
+     if(a[i] & 1)
+      console.log(a[i]);
+    }  
+  }
+  odd(d);
+})();
+        b.Convert all the strings to title caps in a string array
+        //anonym
+        let s = "I'm a little tea pot";
+let o = function(a)
+{
+ let r = "";
+ for(let i = 0;i<a.length;i++)
+ {
+     if(a[i] == ' ' && i+1 < a.length)
+     {
+         r = r + " " + a[i+1].toUpperCase();
+         i++;
+     }
+     else
+      r += a[i];
+ }
+ return r;
+};
+console.log(o(s));
+//iife
+let s = "I'm a little tea pot";
+(function()
+{
+    function tc(a)
+    {
+    let r = "";
+    for(let i = 0;i<a.length;i++)
+    {
+     if(a[i] == ' ' && i+1 < a.length)
+     {
+         r = r + " " + a[i+1].toUpperCase();
+         i++;
+     }
+     else
+      r += a[i];
+    }
+    return r;
+    }
+    console.log(tc(s));
+})();
+        c.Sum of all numbers in an array
+        //anonym
+        let d = [1,2,3,4,5,6,7,8,9,10];
+let o = function(a)
+{
+ let s = 0;
+ for(let i = 0;i<a.length;i++)
+ {
+     s += a[i];
+ }
+ return s;
+};
+console.log(o(d));
+//iife
+let d = [1,2,3,4,5,6,7,8,9,10];
+(function(a)
+{
+        let s = 0;
+        for(let i = 0;i<a.length;i++)
+         s += a[i];
+        console.log(s);
+})(d);
+        d.Return all the prime numbers in an array
+        //anonym
+        let d = [1,2,3,4,5,6,7,8,9,10];
+let o = function(a)
+{
+ for(let i = 0;i<a.length;i++)
+ {
+     for(j=2;j<=parseInt(Math.sqrt(a[i]));j++)
+     {
+         if(a[i]%j == 0)
+          break;
+     }
+     if((j == parseInt(Math.sqrt(a[i]))+1) && (a[i] > 1))
+      console.log(a[i]);
+ }
+};
+o(d);
+//iife
+let d = [1,2,3,4,5,6,7,8,9,10];
+(function(a)
+{
+ for(let i = 0;i<a.length;i++)
+ {
+     for(j=2;j<=parseInt(Math.sqrt(a[i]));j++)
+     {
+         if(a[i]%j == 0)
+          break;
+     }
+     if((j == parseInt(Math.sqrt(a[i]))+1) && (a[i] > 1))
+      console.log(a[i]);
+ }
+})(d);
+        e.Return all the palindromes in an array
+        f.Return median of two sorted arrays of same size 
+        g.Remove duplicates from an array
+        //anonym
+        let d = [1,2,1,4,5,5,7,8,8,9,10];
+let o = function(a)
+{
+ let s = [...new Set(a)];
+ return s;
+};
+console.log(o(d));
+//iife
+let d = [1,2,1,4,5,5,7,8,8,9,10];
+(function(a)
+{
+ let s = [...new Set(a)];
+ console.log(s);
+})(d);
+        h.Rotate an array by k times
+        //anonym
+        let d = [1,2,1,4,5,5,7,8,8,9,10];
+let o = function (a,k) {
+    if (!a.length) 
+     return a;
+    let i = -1;
+    while (++i < k) {
+        a.unshift(a.pop());
+    }
+    return a;
+}
+console.log(o(d,3));
+//iife
+let d = [1,2,1,4,5,5,7,8,8,9,10];
+(function (a,k) 
+{
+    if (!a.length) 
+     return a;
+    let i = -1;
+    while (++i < k) {
+        a.unshift(a.pop());
+    }
+    console.log(a);
+})(d,3);
+        
