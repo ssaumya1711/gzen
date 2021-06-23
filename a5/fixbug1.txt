@@ -1,1 +1,137 @@
+Q1.let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+" "+lname;
+alert( admin );
 
+Q2.let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+" "+lname;
+alert('hello ' + name);
+
+Q3.let a = parseInt(prompt("First number?"));
+let b = parseInt(prompt("Second number?"));
+alert(a + b);
+
+Q4.var a = 2 > 12;
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+Q5.let a = 0;
+//Don't modify any code below this
+if (a) {
+ console.log( 'OMG it works for any number inc 0' );
+}
+else
+{
+ console.log( "Success" );
+}
+
+Q6.let value = prompt('How many runs you scored in this ball');
+if (value == 4) {
+      console.log("You hit a Four");
+} else if (value == 6) {
+      console.log("You hit a Six");
+} else {
+      console.log("I couldn't figure out");
+}
+
+Q7.let login = 'Employee';
+let message = (login == 'Employee') ? 'Welcome':
+  (login == 'Director') ? 'Greetings' :
+  (login == '') ? 'No login' :
+  '';
+console.log(message);
+
+Q8.let message;
+if (null || 2 || undefined )
+{
+ message = "welcome boss";
+}
+else
+{
+ message = "Go away";
+}
+  console.log(message);
+
+Q9.let message;
+let lock = 0;
+//Dont change any code below this 
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+  console.log(message);
+
+Q10.let message;
+let lock = null;
+//Dont change any code below this
+if (lock && " " || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message);
+
+Q11.let i = 3;
+while (i) {
+  console.log( i-- );
+}
+
+Q12.let num = 1
+while(num <= 10)
+{
+    let r = "";
+    for(i=0;i<3 && num<=10;i++)
+    {
+        r = r + num + " ";
+        num++;
+    }
+    console.log(r.trim());
+}
+
+Q13.//You are allowed to modify only one character 
+for (let num = 2; num <= 20; num += 2) {
+  console.log(num)
+}
+
+Q14.let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {
+  console.log(`Wrapped ${gifts[i]} and added a bow!`);
+}
+
+
+Q15.let countdown = 100;
+while (countdown > 0) {
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+  countdown--;
+}
+
+Q16.var lemein = "0";
+var lemeout = 0;
+var msg = "";
+if (lemein) {
+ msg += "hi";
+ }
+if (lemeout) {
+ msg += 'Hello';
+}
+console.log(msg);
+hi is printed as first if condition is true as 0 is stored as string and second if condition is false as 0 is as number*/
