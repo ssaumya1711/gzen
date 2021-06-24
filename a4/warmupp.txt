@@ -167,3 +167,5 @@ function addProperty(obj, key){
  if(f == 0)
   obj[key] = true;
 }
+
+The remaining problems or similar type have already been solved in codekata.
