@@ -70,3 +70,35 @@ let p = new Person("XYZ","Abc");
 p.age_gen(8,"M");
 p.contactinfo(6868,"xyz@123");
 console.log(p);
+
+4)
+class Fare
+{
+    constructor(x,y,z)
+    {
+        this.type = x;
+        this.km = parseFloat(y);
+        this.min = parseInt(z);
+    }
+    getfare()
+    {
+        if(this.type == "Pool")
+         this.pool();
+        else if(this.type == "Go")
+         this.go();
+        else if(this.type == "Premier")
+         this.prem();
+    }
+    pool()
+    {
+     console.log(31.5+(1.58*this.min)+(6.30*this.km));
+    }
+    go()
+    {
+     console.log(31.5+(6.30*this.km)+(1.05*this.this));
+    }
+    prem()
+    {
+     console.log(44.10+(7.35*this.km)+(1.26*this.min));
+    }
+}
