@@ -1,0 +1,19 @@
+2)
+class circle
+{
+    constructor(x)
+    {
+        this.r = x;
+    }
+    area()
+    {
+        console.log(this.r*this.r*Math.PI);
+    }
+    circumference()
+    {
+        console.log(2*this.r*Math.PI);
+    }
+}
+let c = new circle(2);
+c.area();
+c.circumference();
