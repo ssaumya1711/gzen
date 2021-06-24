@@ -46,3 +46,27 @@ class circle
 let c = new circle(2);
 c.area();
 c.circumference();
+
+3)
+class Person
+{
+    constructor(x,y)
+    {
+        this.fname = x;
+        this.lmame = y;
+    }
+    age_gen(a,b)
+    {
+        this.age = a;
+        this.gen = b;
+    }
+    contactinfo(c,d)
+    {
+        this.phone = c;
+        this.email = d;
+    }
+}
+let p = new Person("XYZ","Abc");
+p.age_gen(8,"M");
+p.contactinfo(6868,"xyz@123");
+console.log(p);
