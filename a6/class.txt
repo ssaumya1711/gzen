@@ -1,3 +1,32 @@
+1)
+class Movie
+{
+    constructor(x,y,z)
+    {
+        this.title = x;
+        this.studio = y;
+        if(z == "" || z == " ")
+         this.rating = "PG";
+        else
+         this.rating = z;
+    }
+    getPG(a)
+    {
+        var r = [];
+        for(let i = 0;i<a.length;i++)
+        {
+             if(a[i].rating == "PG")
+              r.push(a[i]);
+        }
+        console.log(r);
+    }
+}
+let b = new Movie("Casino Royale","Eon Productions","PG13");
+let c = new Movie("XYZ","Eon Productions","R");
+let d = new Movie("Casino Royale","AB Productions","PG");
+let arr = [b,c,d];
+c.getPG(arr);
+
 2)
 class circle
 {
