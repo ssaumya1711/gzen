@@ -1,0 +1,39 @@
+1)
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+  var data = JSON.parse(this.response);
+  var t = data.filter(function(i){return i.region == "Asia"});
+  console.log(t);
+};
+xhr.send();
+
+2)
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+  var data = JSON.parse(this.response);
+  var t = data.filter(function(i){return i.population < 200000});
+  console.log(t);
+};
+xhr.send();
+
+4)
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+  var data = JSON.parse(this.response);
+  var t = data.map(function(i){return i.population}).reduce(function(x,y) {return x+y},0);
+  console.log(t);
+};
+xhr.send();
+
+5)
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+  var data = JSON.parse(this.response);
+  var t = data.filter(function(x) {return x.currencies[0].name == "United States dollar"});
+  console.log(t);
+};
+xhr.send();
