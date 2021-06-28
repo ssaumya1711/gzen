@@ -18,6 +18,17 @@ xhr.onload = function () {
 };
 xhr.send();
 
+3)
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function () {
+  var data = JSON.parse(this.response);
+  dataforEach(element => {
+    console.log(element.name,element.capital,element.flag);
+  });
+};
+xhr.send();
+
 4)
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://restcountries.eu/rest/v2/all");
