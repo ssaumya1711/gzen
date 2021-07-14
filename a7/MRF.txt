@@ -1,4 +1,4 @@
-1)
+1) Region - Asia
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://restcountries.eu/rest/v2/all");
 xhr.onload = function () {
@@ -8,7 +8,7 @@ xhr.onload = function () {
 };
 xhr.send();
 
-2)
+2) Population < 200000
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://restcountries.eu/rest/v2/all");
 xhr.onload = function () {
@@ -18,7 +18,7 @@ xhr.onload = function () {
 };
 xhr.send();
 
-3)
+3) Printing name, capital, flag
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://restcountries.eu/rest/v2/all");
 xhr.onload = function () {
@@ -29,7 +29,7 @@ xhr.onload = function () {
 };
 xhr.send();
 
-4)
+4) Total Population
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://restcountries.eu/rest/v2/all");
 xhr.onload = function () {
@@ -39,7 +39,7 @@ xhr.onload = function () {
 };
 xhr.send();
 
-5)
+5) Currency - United States Dollar
 var xhr = new XMLHttpRequest();
 xhr.open("GET", "https://restcountries.eu/rest/v2/all");
 xhr.onload = function () {
